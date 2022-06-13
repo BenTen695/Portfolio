@@ -12,6 +12,13 @@
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
+  color: #eb9710;
+}
+
+.bi_ {
+  vertical-align: -.125em;
+  fill: currentColor;
+  color: #fff;
 }
 
 .feature-icon {

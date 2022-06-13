@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,41 +136,11 @@
     <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
   </symbol>
 </svg>
-<!-- Nav bar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Ben Barrett CV</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExample04">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown04">
-            <li><a class="dropdown-item" href="#">Akita Website</a></li>
-            <li><a class="dropdown-item" href="#">Engineering Calculator Website</a></li>
-            <li><a class="dropdown-item" href="#">World of Warcraft fansite</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- nav bar close -->
 
 <!-- Custom cards start -->
   <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Custom cards</h2>
-    <p>Hi my names mishturr murr</p>
- 
+    <h2 class="pb-2 border-bottom">Profile</h2>
     <div class="card mb-3" style="max-width: 540px;">
       <div class="row g-5">
         <div class="col-md-4">
@@ -174,13 +148,13 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Ben Barrett</h5>
+            <h5 class="card-title">Ben Barrett BEng</h5>
             <p class="card-text">Aspiring Full Stack Developer</p>
             <li class="d-flex align-items-center me-3">
               <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
               <small>Sheffield, England</small>
             </li>
-            <p class="card-text"><small class="text-muted">My name Jeff</small></p>
+            <!-- <p class="card-text"><small class="text-muted">test</small></p> -->
           </div>
         </div>
       </div>
@@ -276,14 +250,14 @@
               <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#python"/></svg>
               <div>
                 <h4 class="fw-bold mb-0">Python</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                <p>I have used python for website back ends and used NumPy, Pandas and Matplotlib for data analysis / calculation.</p>
               </div>
             </div>
             <div class="col d-flex align-items-start">
               <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#css3"/></svg>
               <div>
                 <h4 class="fw-bold mb-0">CSS</h4>
-                <p>Paragraph of text beneath the heading to explain the heading.</p>
+                <p>I have used CSS to style websites creating custom styles on different pages.</p>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -417,3 +391,4 @@
 
 </body>
 </html>
+{% endblock %}
